@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html><head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Tips Page</title>
+    </head>
 <body>
     <h2>Jahnavi Chava shows tip amounts</h2>
    
-
-    <label for="amount">Enter base amount:</label>
-    <input type="number" id="amount" value="50"><br>
+    <div class="mx-auto w-50 border p-2">
+    <label for="amount"class="form-label">Enter base amount:</label>
+    <input type="number" id="amount"class="form-control" value="50"><br>
   
-    <label for="percentageTip">Enter the tip percent:</label>
-    <input type="number" id="percentageTip" value="15"><br>
+    <label for="percentageTip"class="form-label">Enter the tip percent:</label>
+    <input type="number" id="percentageTip" class="form-control"value="15"><br>
   
     <input type="button" value="Show TIP" onclick="tips()"><br>
+    
   
     <p id="tipResults">Tips are:</p>
+    
   
     <form>
-        <label><input type="radio" name="operation" value="sum" onclick="chooseOp()">Sum</label>
-        <label><input type="radio" name="operation" value="difference" onclick="chooseOp()">Diff</label>
-        <label><input type="radio" name="operation" value="product" onclick="chooseOp()">Mult</label>
+        <label><input type="radio" class="form-control" name="operation" value="sum" onclick="chooseOp()">Sum</label>
+        <label><input type="radio" class="form-control"name="operation" value="difference" onclick="chooseOp()">Diff</label>
+        <label><input type="radio" class="form-control"name="operation" value="product" onclick="chooseOp()">Mult</label>
 
         <p id="operationResult"></p>
+        </div>
 
     </form>
     <script>
